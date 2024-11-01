@@ -1,5 +1,5 @@
-@database = myDatabase
-@collection = myCollection
+@database = BigBoxStore
+@collection = GroceryInventory
 @domain = http://localhost
 @port = 3000
 ###
@@ -19,5 +19,5 @@ Content-Type: application/json
 
 ###
 @id = 672189198b014f93b77159c5
-DELETE {{domain}}:{{port}}/find/{{database}}/{{collection}}/{{id}}
+DELETE {{domain}}:{{port}}/delete/{{database}}/{{collection}}/{{id}}
 Content-Type: application/json
